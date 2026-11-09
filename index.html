@@ -1,41 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Emanuely Fernandes | Translator & AI Data Trainer</title>
-  <meta name="description" content="English to Portuguese translator and AI data trainer.">
-  <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <title>Emanuely Fernandes | Technology, Data &amp; Digital Operations</title>
+  <meta name="description" content="Portfolio of Emanuely Fernandes, an early-career professional exploring technology, data, digital operations and language quality." data-i18n-attr="content:meta.description">
+  <meta name="theme-color" content="#080808">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <nav aria-label="Main">
-      <a href="index.html" class="logo">EF</a>
-      <button id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
-      <ul id="menu">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" data-i18n="brand">Emanuely Fernandes</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-attr="aria-label:a11y.menu">
+        <span class="menu-toggle__bars" aria-hidden="true"></span>
+      </button>
+
+      <div class="header-panel" id="site-nav">
+        <nav aria-label="Main navigation" data-i18n-attr="aria-label:a11y.nav">
+          <ul class="nav-list">
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="lang-switch" role="group" aria-label="Language" data-i18n-attr="aria-label:a11y.lang">
+          <button type="button" data-lang="en" lang="en" aria-pressed="true" title="English">EN</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" data-lang="pt-BR" lang="pt-BR" aria-pressed="false" title="Português (Brasil)">PT-BR</button>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="images/Chat.png.png" alt="" class="hero-img">
-      <h1>Language meets AI</h1>
-      <p>Translation, data analysis, MTPE, AI Trainer and website creation.</p>
-      <a class="btn" href="portfolio.html">See my work</a>
+  <main id="main">
+
+    <!-- HOME -->
+    <section class="section hero" id="home" aria-labelledby="home-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hello" data-i18n="home.hello">Hello, I'm</p>
+          <h1 id="home-title">Emanuely Fernandes</h1>
+          <p class="headline" data-i18n="home.headline">Technology, Data &amp; Digital Operations</p>
+          <p class="lead" data-i18n="home.intro">I’m an early-career professional exploring the intersection of technology, data, digital processes, and language quality. My experience combines administrative operations, information organization, and linguistic evaluation of AI-generated content. I’m continuously developing my technical knowledge and looking for opportunities to grow within the technology field.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-i18n="home.cta">Contact me</a>
+            <ul class="profile-links" data-i18n-attr="aria-label:home.profiles">
+              <li><a class="text-link" href="https://github.com/emanuelyffrs" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only" data-i18n="a11y.newTab"> (opens in a new tab)</span></a></li>
+              <li><a class="text-link" href="https://www.linkedin.com/in/emanuelyfernandes" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only" data-i18n="a11y.newTab"> (opens in a new tab)</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Small pixel-art pink heart surrounded by hand-drawn sparkles" data-i18n-attr="aria-label:home.art">
+          <svg viewBox="0 0 320 320" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <rect x="90" y="60" width="20" height="20" fill="#FF168F"/>
+      <rect x="110" y="60" width="20" height="20" fill="#FF168F"/>
+      <rect x="190" y="60" width="20" height="20" fill="#FF168F"/>
+      <rect x="210" y="60" width="20" height="20" fill="#FF168F"/>
+      <rect x="70" y="80" width="20" height="20" fill="#F2A9CD"/>
+      <rect x="90" y="80" width="20" height="20" fill="#F8E5EF"/>
+      <rect x="110" y="80" width="20" height="20" fill="#FF168F"/>
+      <rect x="130" y="80" width="20" height="20" fill="#FF168F"/>
+      <rect x="170" y="80" width="20" height="20" fill="#FF168F"/>
+      <rect x="190" y="80" width="20" height="20" fill="#F8E5EF"/>
+      <rect x="210" y="80" width="20" height="20" fill="#F2A9CD"/>
+      <rect x="230" y="80" width="20" height="20" fill="#FF168F"/>
+      <rect x="50" y="100" width="20" height="20" fill="#FF168F"/>
+      <rect x="70" y="100" width="20" height="20" fill="#F2A9CD"/>
+      <rect x="90" y="100" width="20" height="20" fill="#F2A9CD"/>
+      <rect x="110" y="100" width="20" height="20" fill="#FF168F"/>
+      <rect x="130" y="100" width="20" height="20" fill="#FF168F"/>
+      <rect x="150" y="100" width="20" height="20" fill="#FF168F"/>
+      <rect x="170" y="100" width="20" height="20" fill="#FF168F"/>
+      <rect x="190" y="100" width="20" height="20" fill="#F2A9CD"/>
+      <rect x="210" y="100" width="20" height="20" fill="#F2A9CD"/>
+      <rect x="230" y="100" width="20" height="20" fill="#FF168F"/>
+      <rect x="250" y="100" width="20" height="20" fill="#FF168F"/>
+      <rect x="50" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="70" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="90" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="110" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="130" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="150" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="170" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="190" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="210" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="230" y="120" width="20" height="20" fill="#FF168F"/>
+      <rect x="250" y="120" width="20" height="20" fill="#D957A0"/>
+      <rect x="50" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="70" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="90" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="110" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="130" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="150" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="170" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="190" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="210" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="230" y="140" width="20" height="20" fill="#FF168F"/>
+      <rect x="250" y="140" width="20" height="20" fill="#D957A0"/>
+      <rect x="70" y="160" width="20" height="20" fill="#FF168F"/>
+      <rect x="90" y="160" width="20" height="20" fill="#FF168F"/>
+      <rect x="110" y="160" width="20" height="20" fill="#FF168F"/>
+      <rect x="130" y="160" width="20" height="20" fill="#FF168F"/>
+      <rect x="150" y="160" width="20" height="20" fill="#FF168F"/>
+      <rect x="170" y="160" width="20" height="20" fill="#D957A0"/>
+      <rect x="190" y="160" width="20" height="20" fill="#D957A0"/>
+      <rect x="210" y="160" width="20" height="20" fill="#D957A0"/>
+      <rect x="230" y="160" width="20" height="20" fill="#D957A0"/>
+      <rect x="90" y="180" width="20" height="20" fill="#FF168F"/>
+      <rect x="110" y="180" width="20" height="20" fill="#FF168F"/>
+      <rect x="130" y="180" width="20" height="20" fill="#FF168F"/>
+      <rect x="150" y="180" width="20" height="20" fill="#D957A0"/>
+      <rect x="170" y="180" width="20" height="20" fill="#D957A0"/>
+      <rect x="190" y="180" width="20" height="20" fill="#D957A0"/>
+      <rect x="210" y="180" width="20" height="20" fill="#D957A0"/>
+      <rect x="110" y="200" width="20" height="20" fill="#FF168F"/>
+      <rect x="130" y="200" width="20" height="20" fill="#FF168F"/>
+      <rect x="150" y="200" width="20" height="20" fill="#D957A0"/>
+      <rect x="170" y="200" width="20" height="20" fill="#D957A0"/>
+      <rect x="190" y="200" width="20" height="20" fill="#D957A0"/>
+      <rect x="130" y="220" width="20" height="20" fill="#FF168F"/>
+      <rect x="150" y="220" width="20" height="20" fill="#D957A0"/>
+      <rect x="170" y="220" width="20" height="20" fill="#D957A0"/>
+      <rect x="150" y="240" width="20" height="20" fill="#D957A0"/>
+      <rect x="265" y="57" width="6" height="18" fill="#F2A9CD"/><rect x="259" y="63" width="18" height="6" fill="#F2A9CD"/>
+      <rect x="34" y="255" width="5" height="15" fill="#D957A0"/><rect x="29" y="260" width="15" height="5" fill="#D957A0"/>
+      <!-- hand-drawn rings and squiggle -->
+      <circle cx="40" cy="52" r="9" fill="none" stroke="#D957A0" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="48 9"/>
+      <circle cx="282" cy="250" r="12" fill="none" stroke="#FF168F" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="64 10"/>
+      <path d="M62 292 q10 -12 20 0 t20 0 t20 0 t20 0" fill="none" stroke="#F2A9CD" stroke-width="2.5" stroke-linecap="round"/>
+      <rect class="cursor-blink" x="236" y="286" width="22" height="6" fill="#F8E5EF"/>
+    </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 id="about-title" data-i18n="about.title">About</h2>
+          <p data-i18n="about.p1">I’m an early-career professional with experience in administrative operations, information organization, and language quality. My work has included reviewing AI-generated and machine-translated content, supporting digital workflows, and handling administrative processes.</p>
+          <p data-i18n="about.p2">I’m currently expanding my knowledge of technology, particularly data and programming. I enjoy learning new tools, understanding how information is structured, and finding practical solutions to everyday challenges.</p>
+        </div>
+
+        <figure class="photo" id="photo">
+          <img src="assets/profile-photo.jpg" width="160" height="160" alt="Portrait of Emanuely Fernandes" data-i18n-attr="alt:about.photoAlt">
+          <span class="photo__placeholder" aria-hidden="true">EF</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" data-i18n="projects.title">Featured project</h2>
+
+        <article class="project" aria-labelledby="project-name">
+          <div class="project-body">
+            <h3 id="project-name">AI-Powered Translator</h3>
+            <p class="project-stack" data-i18n="projects.stackLine">Python, LangChain &amp; Gemini</p>
+
+            <p data-i18n="projects.purpose">A translation tool where the target language and the text are inputs rather than fixed in the code. Instead of a script that only translates one sentence into one language, a single chain can translate any text into whichever language is requested.</p>
+
+            <h4 data-i18n="projects.howTitle">How it works</h4>
+            <ul class="plain-list">
+              <li data-i18n="projects.how1">A chat prompt template holds a system instruction and a user message, with the language and the text as variables.</li>
+              <li data-i18n="projects.how2">The prompt is connected to Google’s Gemini model through the LangChain integration and then to a string output parser, forming one chain.</li>
+              <li data-i18n="projects.how3">The chain is exposed as an API with FastAPI and LangServe, and the Gemini API key is read from an environment variable instead of being written in the code.</li>
+            </ul>
+
+            <h4 data-i18n="projects.learnTitle">What I practiced</h4>
+            <p data-i18n="projects.learn">Building chains in LangChain, writing prompt templates with variables, calling a language model from Python, handling credentials with environment variables, and serving a model-backed endpoint.</p>
+
+            <ul class="tags" data-i18n-attr="aria-label:projects.toolsLabel" aria-label="Tools used">
+              <li>Python</li>
+              <li>LangChain</li>
+              <li>Gemini</li>
+              <li>FastAPI</li>
+              <li>LangServe</li>
+            </ul>
+
+            <a class="btn btn-primary" href="https://github.com/emanuelyffrs/tradutor-ia-langchain-gemini" target="_blank" rel="noopener noreferrer"><span data-i18n="projects.repo">View repository on GitHub</span><span class="sr-only" data-i18n="a11y.newTab"> (opens in a new tab)</span></a>
+          </div>
+
+          <figure class="code-figure">
+            <figcaption data-i18n="projects.codeCaption">The core of the chain, from ia_tradutora.py</figcaption>
+<pre class="code" tabindex="0" aria-label="Code excerpt from the project" data-i18n-attr="aria-label:projects.codeLabel"><code><span class="c"># prompt: language + text variables</span>
+template = ChatPromptTemplate.from_messages([
+    (<span class="s">"system"</span>, <span class="s">"Traduza o texto a seguir para {idioma}"</span>),
+    (<span class="s">"user"</span>, <span class="s">"{texto}"</span>),
+])
+
+<span class="c"># prompt | Gemini | string parser</span>
+cadeia_dinamica = template | modelo | parser
+
+resultado = cadeia_dinamica.invoke({
+    <span class="s">"idioma"</span>: <span class="s">"inglês"</span>,
+    <span class="s">"texto"</span>: <span class="s">"Estou bem, e você?"</span>
+})</code></pre>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <h2 id="experience-title" data-i18n="experience.title">Experience</h2>
+
+        <ol class="timeline">
+          <li>
+            <h3 data-i18n="experience.intern.role">Administrative Assistant Intern</h3>
+            <ul class="plain-list">
+              <li data-i18n="experience.intern.b1">Customer service and public assistance.</li>
+              <li data-i18n="experience.intern.b2">Updating records and checking information.</li>
+              <li data-i18n="experience.intern.b3">Organizing administrative records.</li>
+              <li data-i18n="experience.intern.b4">Supporting administrative processes and digital systems.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 data-i18n="experience.assistant.role">Administrative Assistant</h3>
+            <ul class="plain-list">
+              <li data-i18n="experience.assistant.b1">Assistance with administrative routines.</li>
+              <li data-i18n="experience.assistant.b2">Customer service.</li>
+              <li data-i18n="experience.assistant.b3">Preparation and requests for Brazilian documentation for immigrant clients.</li>
+            </ul>
+          </li>
+          <li>
+            <h3><span data-i18n="experience.rws.role">Translator &amp; Linguistic Reviewer</span> <span class="org">RWS</span></h3>
+            <ul class="plain-list">
+              <li data-i18n="experience.rws.b1">Translation and review of English-to-Brazilian Portuguese content.</li>
+              <li data-i18n="experience.rws.b2">Post-editing of machine-translated content (MTPE).</li>
+              <li data-i18n="experience.rws.b3">Evaluation and linguistic quality control of AI-generated content.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" data-i18n="skills.title">Skills &amp; Technologies</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 data-i18n="skills.data.title">Data &amp; Technical Foundations</h3>
+            <ul class="plain-list">
+              <li data-i18n="skills.data.sql">SQL (developing)</li>
+              <li data-i18n="skills.data.python">Python (developing)</li>
+              <li data-i18n="skills.data.db">Database fundamentals</li>
+              <li data-i18n="skills.data.info">Information organization</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.ops.title">Digital &amp; Administrative Operations</h3>
+            <ul class="plain-list">
+              <li data-i18n="skills.ops.office">Microsoft Office</li>
+              <li data-i18n="skills.ops.google">Google Workspace</li>
+              <li data-i18n="skills.ops.admin">Administrative processes</li>
+              <li data-i18n="skills.ops.records">Scheduling and record management</li>
+              <li data-i18n="skills.ops.service">Customer service</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <h3 data-i18n="skills.lang.title">Language &amp; AI Quality</h3>
+            <ul class="plain-list">
+              <li data-i18n="skills.lang.translation">English-to-Brazilian Portuguese translation</li>
+              <li data-i18n="skills.lang.mtpe">Machine Translation Post-Editing (MTPE)</li>
+              <li data-i18n="skills.lang.review">Linguistic review</li>
+              <li data-i18n="skills.lang.eval">AI-generated content evaluation</li>
+              <li data-i18n="skills.lang.qa">Text quality assurance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & LANGUAGES -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <h2 id="education-title" data-i18n="education.title">Education &amp; Courses</h2>
+
+        <ul class="edu-list">
+          <li>
+            <div>
+              <h3 data-i18n="education.ads.title">Systems Analysis and Development (ADS)</h3>
+              <p class="muted" data-i18n="education.ads.school">Mackenzie Presbyterian University</p>
+            </div>
+            <p class="edu-when" data-i18n="education.ads.status">2027 – Currently pursuing</p>
+          </li>
+          <li>
+            <div>
+              <h3 data-i18n="education.python.title">Python</h3>
+              <p class="muted">EV.G</p>
+            </div>
+            <p class="edu-when">2026</p>
+          </li>
+          <li>
+            <div>
+              <h3 data-i18n="education.sql.title">SQL</h3>
+              <p class="muted">FGV</p>
+            </div>
+            <p class="edu-when">2026</p>
+          </li>
+          <li>
+            <div>
+              <h3 data-i18n="education.hs.title">High School</h3>
+              <p class="muted">Colégio Estadual Olavo Bilac</p>
+            </div>
+            <p class="edu-when">2025</p>
+          </li>
+          <li>
+            <div>
+              <h3 data-i18n="education.senac.title">Administrative Assistant</h3>
+              <p class="muted">Senac</p>
+            </div>
+            <p class="edu-when">2023</p>
+          </li>
+        </ul>
+
+        <h3 class="subhead" data-i18n="languages.title">Languages</h3>
+        <ul class="lang-list">
+          <li><span data-i18n="languages.pt">Portuguese</span> <span class="muted" data-i18n="languages.ptLevel">Native</span></li>
+          <li><span data-i18n="languages.en">English</span> <span class="muted" data-i18n="languages.enLevel">Advanced</span></li>
+          <li><span data-i18n="languages.libras">Brazilian Sign Language (LIBRAS)</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+        <p class="lead" data-i18n="contact.intro">The best way to reach me is by WhatsApp or email.</p>
+
+        <ul class="contact-list">
+          <li>
+            <a class="btn btn-primary" href="https://wa.me/5524998537365" target="_blank" rel="noopener noreferrer">WhatsApp<span class="sr-only" data-i18n="a11y.newTab"> (opens in a new tab)</span></a>
+            <span class="muted">+55 24 99853-7365</span>
+          </li>
+          <li>
+            <a class="btn btn-outline" href="mailto:emanuelyffrs@gmail.com">Gmail</a>
+            <span class="muted">emanuelyffrs@gmail.com</span>
+          </li>
+          <li>
+            <a class="btn btn-outline" href="https://github.com/emanuelyffrs" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only" data-i18n="a11y.newTab"> (opens in a new tab)</span></a>
+            <span class="muted">github.com/emanuelyffrs</span>
+          </li>
+          <li>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/emanuelyfernandes" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only" data-i18n="a11y.newTab"> (opens in a new tab)</span></a>
+            <span class="muted">linkedin.com/in/emanuelyfernandes</span>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Emanuely Fernandes</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p data-i18n="footer.text">© 2026 Emanuely Fernandes. Built by hand with HTML, CSS and JavaScript.</p>
+      <a class="text-link" href="#home" data-i18n="footer.top">Back to top</a>
+    </div>
   </footer>
+
+  <p class="sr-only" id="lang-status" role="status" aria-live="polite"></p>
 </body>
 </html>
